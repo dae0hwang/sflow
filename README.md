@@ -1,5 +1,5 @@
 ## 파일 확장자 차단 페이지 설명
-페이지 접속 주소는 [[http://3.39.165.43](http://ec2-3-39-165-43.ap-northeast-2.compute.amazonaws.com/)]([http://3.39.165.43](http://ec2-3-39-165-43.ap-northeast-2.compute.amazonaws.com/))입니다.
+페이지 접속 주소는 [http://ec2-3-39-165-43.ap-northeast-2.compute.amazonaws.com](http://ec2-3-39-165-43.ap-northeast-2.compute.amazonaws.com)입니다.
 
 웹 서버 운영을 위해 Docker와 AWS의 EC2, AWS RDS(Mysql)를 사용했습니다.
 
