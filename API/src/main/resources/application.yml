@@ -1,0 +1,39 @@
+spring:
+  jpa:
+    open-in-view: false
+server:
+  port: 5510
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: "jdbc:mysql://127.0.0.3:3306/sflow"
+    username: "hwang"
+    password: "5510"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: aws
+  datasource:
+    url: "jdbc:mysql://sflow-public.cbiozpdvq17b.ap-northeast-2.rds.amazonaws.com:3306/sflow"
+    username: "admin"
+    password: "Asd!1234"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MYSQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
