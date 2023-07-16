@@ -1,7 +1,7 @@
 ## 파일 확장자 차단 페이지 설명
 페이지 접속 주소는 [http://3.39.165.43](http://3.39.165.43)입니다.
 
-웹 서버 운영을 위해 Docker와 AWS의 EC2와 AWS RDS(Mysql)를 사용했습니다.
+웹 서버 운영을 위해 Docker와 AWS의 EC2, AWS RDS(Mysql)를 사용했습니다.
 
 백엔드 서버는 Java-Spring을 사용하여 REST API를 구현하였고,  
 프론트엔드 서버는 HTML, CSS, Bootstrap 그리고 Javascript를 사용하여 구현했습니다.
@@ -24,15 +24,14 @@ CREATE TABLE extension(
 ## 메인 페이지 설명 
 '파일 확장자 차단하기' 버튼을 클릭하면 핵심 과제인 확장자 차단 페이지로 이동합니다.  
 '데이터베이스 확인하기' 버튼을 클릭하면 확장자 차단 결과과 반영된 DB 정보를 보여줍니다.
-<div style="text-align: center;"><img width="60%" height="60%" src="image/main.png"></div>
-
+<img width="60%" height="60%" src="image/main.png">
 ## 확장자 차단 페이지 설명
-<div style="text-align: center;"><img width="60%" height="60%" src="image/file.png"></div>  
+<img width="60%" height="60%" src="image/file.png"> 
 
 **< 1. 고정 확장자 정보 표시하기>**  
 백엔드 서버를 통해 DB에서 고정 확장자 정보를 직접 가져와 체크여부(active_check)를 파악 후 화면에 표시합니다.  
 DB에서 직접 정보를 가져와 표시하기 때문에, 고정 확장자 정보가 증가 해도 
-프론트 서버의 코드 변화를 최소화 하여 나타낼 수 있습니다.
+프론트 서버의 코드 변화를 최소화할 수 있습니다.
 
 **< 2. 고정 확장자 체크하기>**  
 고정 확장자 옆 체크박스를 클릭하면, DB에서 해당 확장자 정보를 가져와 체크(active)여부를 반대로 변경합니다.  
